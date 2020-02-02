@@ -1,0 +1,442 @@
+/*
+Template:onepress
+Theme Name:onepress-child
+*/
+
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Montserrat", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "メイリオ",
+    "Meiryo", "YuGothic", "游ゴシック", "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 0.9rem;
+}
+
+/*index.html*/
+header nav {
+  position: fixed;
+  background-color: #fff;
+  padding: 1em;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  list-style: none;
+  text-align: center;
+  width: 12%;
+}
+
+header nav ul li:first-child {
+  margin-right: auto;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+}
+
+header nav ul .nav__bottan {
+  background-color: #295cb7;
+  padding: 0.5% 0;
+  border-radius: 10px;
+}
+header nav ul .nav__bottan a {
+  color: #fff;
+}
+
+header .top__img {
+  background-image: url(../img/top_img.png);
+  background-position: center center;
+  height: 90vh;
+  width: 100%;
+}
+
+header .top__img img {
+  width: 100%;
+}
+
+header .top__img section h1 {
+  padding: 3em 0 0 50px;
+  font-size: 40px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+  /* 24px~36pxで可変*/
+  line-height: 1.3;
+}
+
+header .top__img section p {
+  padding: 0 0 0 50px;
+  font-size: 24px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+  /* 20px~24pxで可変*/
+  line-height: 1.3;
+}
+
+/*top-全てのh2*/
+main .content {
+  padding: 0 0 6em;
+}
+
+main .content h2 {
+  font-size: 1.9rem;
+  text-align: center;
+  padding: 3em 0;
+}
+
+/*top-特徴*/
+main .top__ourCompany {
+  width: 100%;
+}
+
+main .top__ourCompany section {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .top__ourCompany section aside p {
+  margin: 0 2em;
+}
+
+main .top__ourCompany section img {
+  width: 90%;
+}
+
+main .top__ourCompany section ul li {
+  font-size: 0.9rem;
+  margin: 0.8em 0;
+}
+
+/*top-制作の流れ*/
+main .top__flow {
+  background-color: #e7eff7;
+}
+
+main .top__flow .flow__img {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .top__flow .flow__img p img {
+  width: 90%;
+  margin-bottom: 3em;
+}
+
+/*top-制作費用*/
+main .top__price h3 {
+  text-align: center;
+  margin: 0 0 1em;
+}
+
+main .top__price .top__price--flex {
+  display: flex;
+  margin-bottom: 3em;
+}
+
+main .top__price .top__price--flex table {
+  width: 40%;
+  margin: auto;
+  border-collapse: collapse;
+  border: solid 2px #295cb7;
+}
+
+main .top__price .top__price--flex table th {
+  padding: 3em 0;
+}
+
+main .top__price .top__price--flex table td {
+  text-align: center;
+  background-color: #e7eff7;
+  border-top: solid 2px #295cb7;
+  padding: 1em 0;
+}
+
+/*リンクボタン*/
+.link__bottan {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.link__bottan a {
+  background-color: #447bdb;
+  border-radius: 28px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 15px 76px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.link__bottan a:hover {
+  background-color: #476e9e;
+}
+
+/*top-お問い合わせ*/
+.top-contact {
+  background-color: #e7eff7;
+}
+
+/*top-特定商法*/
+.top__company section {
+  width: 80%;
+  margin: auto;
+}
+
+.top__company table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.top__company table th {
+  width: 40%;
+  padding: 1em 0 1em 1em;
+  background-color: #e7eff7;
+}
+
+.top__company table td {
+  width: 60%;
+  padding: 1em 0 1em 1em;
+}
+
+/*footer*/
+footer {
+  background-color: #295cb7;
+  padding: 2em 0 4em;
+  margin-top: 3em;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer li {
+  padding: 0.2em 0;
+}
+
+footer a {
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+/*flow.index*/
+.flow__top {
+  width: 100%;
+  background-color: #295cb7;
+  padding: 10em 0 5em;
+  margin-bottom: 5em;
+}
+.flow__top section h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.flow__content article {
+  padding: 0 0 5em;
+}
+.flow__explanation--flex {
+  display: flex;
+  align-items: center;
+  align-self: auto;
+  margin: 4em 0px;
+  width: 60%;
+  margin: auto;
+}
+.flow__explanation--flex .flow--img {
+  width: 30%;
+  margin: 1em 3em;
+}
+.flow__explanation--flex h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+
+.flow__qa h2 {
+  font-size: 1.9rem;
+  text-align: center;
+  padding: 3em 0;
+}
+.flow__qa {
+  background-color: #e7eff7;
+}
+.flow--bottan {
+  margin: 5em auto;
+}
+
+/*price.index*/
+.price__top {
+  width: 100%;
+  background-color: #295cb7;
+  padding: 10em 0 5em;
+}
+.price__top h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.price__cmPriceContent {
+  width: 70%;
+  margin: 5em auto 10em;
+}
+.price__cmPriceContent h2 {
+  font-size: 1.3rem;
+  border-bottom: dashed 2px #295cb7;
+  width: 20%;
+  text-align: center;
+}
+.price__cmPriceContent section {
+  margin: 4em 0;
+}
+.price__cmPriceContent table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  border: solid 1px #295cb7;
+}
+.price__cmPriceContent table th {
+  width: 60%;
+  padding: 1.5em 0;
+  border-bottom: solid 1px #295cb7;
+}
+.price__cmPriceContent table td {
+  width: 40%;
+  padding: 1.5em 0;
+  text-align: center;
+  background-color: #e7eff7;
+  border: solid 1px #295cb7;
+}
+.price__cmPriceContent section.price__flex {
+  display: flex;
+  width: 76%;
+  margin: 0 auto;
+  align-items: center;
+  align-self: auto;
+}
+.price__flex ul {
+}
+section.price__flex ul li {
+  padding: 0.3em 0;
+}
+
+.price__adPriceContent {
+  width: 70%;
+  margin: 5em auto;
+}
+.price__adPriceContent h2 {
+  font-size: 1.3rem;
+  border-bottom: dashed 2px #295cb7;
+  width: 20%;
+  text-align: center;
+}
+.price__adPriceContent section {
+  margin: 4em 0;
+}
+.price__adPriceContent table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  border: solid 1px #295cb7;
+}
+.price__adPriceContent table th {
+  width: 60%;
+  padding: 1.5em 0;
+  border-bottom: solid 1px #295cb7;
+}
+.price__adPriceContent table td {
+  width: 40%;
+  padding: 1.5em 0;
+  text-align: center;
+  background-color: #e7eff7;
+  border: solid 1px #295cb7;
+}
+.price__adPriceContent ul {
+  width: 76%;
+  margin: 3em auto;
+}
+.price__adPriceContent ul li {
+  padding: 0.3em 0;
+}
+
+.price__qa--content {
+  background-color: #e7eff7;
+  padding: 0 0 5em;
+}
+.price__qa--content h2 {
+  font-size: 1.9rem;
+  text-align: center;
+  padding: 3em 0;
+}
+.cp_qa02 *,
+.cp_qa02 *:after,
+.cp_qa02 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cp_qa02 {
+  overflow-x: hidden;
+  margin: 0 auto;
+  color: #333333;
+  width: 60%;
+  margin: auto;
+}
+.cp_qa02.cp_actab {
+  padding: 20px 0;
+  border-bottom: 1px dotted #cccccc;
+}
+.cp_qa02 label {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.cp_qa02 .cp_actab-content {
+  font-size: 1em;
+  overflow: hidden;
+  height: 0;
+  margin: 0 40px;
+  padding: 0 14px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  opacity: 0;
+}
+.cp_qa02 .cp_actab input[type="checkbox"]:checked ~ .cp_actab-content {
+  height: auto;
+  padding: 14px;
+  opacity: 1;
+}
+.cp_qa02 .cp_plus {
+  font-size: 2em;
+  line-height: 100%;
+  z-index: 5;
+  margin: 3px 0 0 10px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  display: inline;
+}
+
+.cp_qa02 .cp_actab input[type="checkbox"] {
+  display: none;
+}
+.price--bottan {
+  margin: 5em auto;
+}
+
